@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #58b4ae
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container
+        {
+            padding: 16px;
+            background-color:#58b4ae
+
+        }
+        input[type=text],input[type=text],input[type=password],input[type=number],input[type=date],input[type=list]
+        {
+            width:30%;
+            padding: 15px;
+            margin:5px 0 22px 0;
+            display: inline-block;
+            border: cornsilk;
+            background-color: #f1f1f1;
+        }
+        input[type=submit]
+        {
+            width:20%;
+            padding:12px;
+            margin: 4px 0 4px 0;
+            display: inline-block;
+            border: bisque;
+            background-color:#ee8572 ;
+            
+            
+            ;
+        }
+        input[type=text]:focus,
+        input[text=password]:focus
+         {
+            background-color: #ddd;
+            outline: none;
+        }
+
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h1>Contacts</h1>
+            <p>please fill this form for contact.</p>
+            <hr>
+            <label for="Name"><b>Name</b></label><br>
+            <input type="text" placeholder="Enter Name" name="Name" required><br>
+
+            <label for="Email"><b>Eamil</b></label><br>
+            <input type="text" placeholder="Enter Email" name="Email" required><br>
+    
+             <label for="psw"><b>Password</b></><br>
+            <input type="password" placeholder="Enter password" name="psw" required><br>
+
+            <label for="Number"><b>Phone No.</b></label><br>
+            <input type="number" placeholder="Enter Name" name="phone no." required><br>
+         
+            <label for="DOB"><b>DOB</b></label><br>
+            <input type="date"  min="1999-01-01" max="2021-01-01"placeholder="Enter DD/MM/YY" required> <br>
+
+            <label for="gender"><b>Select gender</b></label><br>
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female <br>
+             <br>
+
+            <label for= language><b> Selact Language</b></label><br>
+            <input type="checkbox"> Hindi <br>
+            <input type="checkbox"> English <br>
+            <input type="checkbox">Marathi<br> 
+            <br>
+
+            <label for= state><b>Select State</b> </label><br>
+            <select>
+            <option>Maharashtra</option>
+            <option> Goa</option>
+            <option>Panjab</option>
+            <option>Gujrat</option>
+            <option>Rajasthan</option>
+            <option>Kerla</option>
+            <option>Utter Pardesh</option>
+            </select>
+            <br><br>
+
+            <label for="city"><b>Enter City</b></label><br>
+            <input list="city">
+            <datalist id="city" size="30px">
+       
+                <option>pune</option>
+                <option>Mumbai</option>
+                <option>Nashik</option>
+                <option>Nagpur</option>
+            </datalist>
+       
+            <br><br>
+            <label for="resume"><b>Upload resume</b></label><br>
+           <input type="file" placholder="file"><br>
+            <br><br>
+
+            
+
+            <input type="submit" value="Register"
+    
+
+        </div>
+    </form>
+
+    </form>
+    
+</body>
+</html>
